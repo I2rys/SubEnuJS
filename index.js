@@ -51,7 +51,7 @@ function Enumerating(){
             return
         }
 
-        if(Scanner_Data.subdomains[subdomain_index] == undefined){
+        if(Scanner_Data.subdomains[subdomain_index] === undefined){
             subdomain_index += 1
             Subdomains_Enumerater()
             return
@@ -72,7 +72,7 @@ function Enumerating(){
                         return
                     }
 
-                    if(Scanner_Data.results.length == 0){
+                    if(Scanner_Data.results.length === 0){
                         Scanner_Data.results = `${Scanner_Data.subdomains[subdomain_index]} - ${data}`
                     }else{
                         Scanner_Data.results += `\n${Scanner_Data.subdomains[subdomain_index]} - ${data}`
